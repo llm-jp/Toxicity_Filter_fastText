@@ -1,5 +1,12 @@
 # 有害文書フィルタリング
 
+以下で述べるフィルタは、Perspective APIを使って自動生成したラベル付きデータで学習したfastTextベースのフィルタです。
+人手で作成したラベル付きデータ
+[LLM-jp Toxicity Dataset](https://gitlab.llm-jp.nii.ac.jp/datasets/llm-jp-toxicity-dataset "LLM-jp Toxicity Dataset")
+で学習した、より精度の高いDeBERTaベースのフィルタは
+[こちら](https://github.com/llm-jp/Toxicity_Filter "Toxicity_Filter")
+にあります。
+
 ## 準備
 
 - `/path/to/ja_cc/`にフィルタリング対象のファイル`CC-MAIN-2013-2016.jsonl.gz`、`CC-MAIN-2017-04.jsonl.gz`などがあるとします。
