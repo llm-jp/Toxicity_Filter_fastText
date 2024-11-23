@@ -9,6 +9,7 @@
 
 ## 準備
 
+- `pip install fasttext fugashi[unidic-lite]`
 - `/path/to/ja_cc/`にフィルタリング対象のファイル`CC-MAIN-2013-2016.jsonl.gz`、`CC-MAIN-2017-04.jsonl.gz`などがあるとします。
 - `ft_model.bin` ... フィルタリングに使うfastTextモデルです。
 - `predict_ja_cc_gz.py` ... モデルとフィルタリング対象のファイルを読み込んで、ファイル中の各`text`の有害スコアを計算します。
